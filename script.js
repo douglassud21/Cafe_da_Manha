@@ -23,3 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
         cardGroups[0].classList.add('active');
     }
 });
+
+
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+});
+
+document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        document.querySelector('nav').classList.remove('active');
+    });
+});

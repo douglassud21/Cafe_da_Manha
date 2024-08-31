@@ -9,12 +9,19 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <!-- Início do Menu Hambúrguer Mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="mobile-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Cardápio</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
+            <!-- Fim do Menu Hambúrguer Mobile -->
         </nav>
         <div class="highlight-message">
             <h1>Bem-vindo ao Café da Manhã!</h1>
@@ -24,7 +31,7 @@
     </header>
 
     <main>
-        <section class="icons-section">
+        <section class="icons-section" id="menu">
             <div class="icon" data-target="group1">
                 <img src="img/copo-redondo-de-cafe-quente-em-um-prato-de-vista-lateral.png" alt="Ícone 1"> <!-- Substitua pela URL do ícone -->
             </div>
@@ -220,76 +227,75 @@
                 </div>
             </div>
 
-            <!-- Grupo 4 -->
-            <div class="card-group" id="group4">
-                <div class="card">
-                    <img src="americano1.jpg" alt="Café Americano 1"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 1</h2>
-                    <p>Descrição do Café Americano 1.</p>
-                    <p class="price">R$ 8,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="americano2.jpg" alt="Café Americano 2"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 2</h2>
-                    <p>Descrição do Café Americano 2.</p>
-                    <p class="price">R$ 9,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="americano3.jpg" alt="Café Americano 3"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 3</h2>
-                    <p>Descrição do Café Americano 3.</p>
-                    <p class="price">R$ 10,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="americano4.jpg" alt="Café Americano 4"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 4</h2>
-                    <p>Descrição do Café Americano 4.</p>
-                    <p class="price">R$ 11,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="americano5.jpg" alt="Café Americano 5"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 5</h2>
-                    <p>Descrição do Café Americano 5.</p>
-                    <p class="price">R$ 12,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="americano6.jpg" alt="Café Americano 6"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 6</h2>
-                    <p>Descrição do Café Americano 6.</p>
-                    <p class="price">R$ 13,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="americano7.jpg" alt="Café Americano 7"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 7</h2>
-                    <p>Descrição do Café Americano 7.</p>
-                    <p class="price">R$ 14,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="americano8.jpg" alt="Café Americano 8"> <!-- Substitua pela URL da imagem -->
-                    <h2>Café Americano 8</h2>
-                    <p>Descrição do Café Americano 8.</p>
-                    <p class="price">R$ 15,00</p>
-                    <button class="buy-button">Comprar</button>
-                </div>
+           <!-- Grupo 4 -->
+        <div class="card-group" id="group4">
+            <div class="card">
+                <img src="img/abacaxi.jpeg" alt="Torta de Abacaxi"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta de Abacaxi</h2>
+                <p>Deliciosa torta de abacaxi com sabor refrescante.</p>
+                <p class="price">R$ 8,00</p>
+                <button class="buy-button">Comprar</button>
             </div>
-        </section>
+            <div class="card">
+                <img src="img/amora.jpeg" alt="Torta de Amora"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta de Amora</h2>
+                <p>Torta doce de amora, perfeita para o verão.</p>
+                <p class="price">R$ 9,00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="img/banana.jpeg" alt="Torta de Banana"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta de Banana</h2>
+                <p>Clássica torta de banana com toque de canela.</p>
+                <p class="price">R$ 10,00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="img/chocolate.jpeg" alt="Torta de Chocolate"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta de Chocolate</h2>
+                <p>Uma indulgente torta de chocolate para os amantes de doces.</p>
+                <p class="price">R$ 11,00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="img/laranja.jpeg" alt="Torta de Laranja"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta de Laranja</h2>
+                <p>Torta cítrica de laranja, leve e refrescante.</p>
+                <p class="price">R$ 12,00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="img/limão.jpeg" alt="Torta de Limão"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta de Limão</h2>
+                <p>Equilibrada torta de limão com um toque doce e ácido.</p>
+                <p class="price">R$ 13,00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="img/menta.jpeg" alt="Torta de Menta"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta de Menta</h2>
+                <p>Torta refrescante de menta com um toque especial.</p>
+                <p class="price">R$ 14,00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="img/mista.jpeg" alt="Torta Mista"> <!-- Substitua pela URL da imagem -->
+                <h2>Torta Mista</h2>
+                <p>Combinação perfeita de sabores em uma torta mista.</p>
+                <p class="price">R$ 15,00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
 
-        <section class="about">
-            <div class="about-content">
+        <section class="about" id="about">
+            <div class="about-content" id="sobre-nos">
                 <h2>Sobre Nós</h2>
                 <p>Bem-vindo ao Café da Manhã! Somos apaixonados por café e oferecemos uma variedade de opções para começar o seu dia com sabor. Nossa missão é proporcionar uma experiência incrível com cafés de alta qualidade e um atendimento excepcional.</p>
                 <p>Venha nos visitar e descubra o café perfeito para você!</p>
             </div>
         </section>
 
-        <section class="our-history">
+        <section class="our-history" id="nossa-historia">
             <div class="history-content">
                 <div class="history-text">
                     <h2>Nossa História</h2>
@@ -304,28 +310,28 @@
             </div>
         </section>
 
-        <section class="comments">
+        <section class="comments" id="comentarios">
             <h2>Comentários dos Clientes</h2>
             <div class="comments-container">
                 <div class="comment-card">
                     <img src="img/pessoa1.jpg" alt="Cliente 1"> <!-- Substitua pela URL da imagem do cliente -->
                     <div class="comment-text">
                         <p>"O café do Café da Manhã é maravilhoso! O melhor da cidade, sem dúvida."</p>
-                        <p class="author">- João Silva</p>
+                        <p class="author">- Julia Silva</p>
                     </div>
                 </div>
                 <div class="comment-card">
                     <img src="img/pessoa2.jpg" alt="Cliente 2"> <!-- Substitua pela URL da imagem do cliente -->
                     <div class="comment-text">
                         <p>"Adorei a atmosfera acolhedora e o atendimento impecável. Recomendo!"</p>
-                        <p class="author">- Maria Oliveira</p>
+                        <p class="author">- Pedro Santos</p>
                     </div>
                 </div>
                 <div class="comment-card">
                     <img src="img/pessoa3.jpg" alt="Cliente 3"> <!-- Substitua pela URL da imagem do cliente -->
                     <div class="comment-text">
                         <p>"Uma experiência incrível! Os cafés são deliciosos e o ambiente é ótimo."</p>
-                        <p class="author">- Pedro Santos</p>
+                        <p class="author">- Mariana Barbosa</p>
                     </div>
                 </div>
             </div>
@@ -333,21 +339,21 @@
     </main>
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" id="contact">
             <div class="footer-social">
                 <h3>Redes Sociais</h3>
                 <div class="social-icons">
                     <a href="https://facebook.com" target="_blank" class="social-icon">
-                        <img src="facebook-icon.png" alt="Facebook"> <!-- Substitua pela URL do ícone do Facebook -->
+                        <img src="img/facebook (2).png" alt="Facebook"> <!-- Substitua pela URL do ícone do Facebook -->
                     </a>
                     <a href="https://twitter.com" target="_blank" class="social-icon">
-                        <img src="twitter-icon.png" alt="Twitter"> <!-- Substitua pela URL do ícone do Twitter -->
+                        <img src="img/twitter (2).png" alt="Twitter"> <!-- Substitua pela URL do ícone do Twitter -->
                     </a>
                     <a href="https://instagram.com" target="_blank" class="social-icon">
-                        <img src="instagram-icon.png" alt="Instagram"> <!-- Substitua pela URL do ícone do Instagram -->
+                        <img src="img/instagram (2).png" alt="Instagram"> <!-- Substitua pela URL do ícone do Instagram -->
                     </a>
-                    <a href="https://linkedin.com" target="_blank" class="social-icon">
-                        <img src="linkedin-icon.png" alt="LinkedIn"> <!-- Substitua pela URL do ícone do LinkedIn -->
+                    <a href="https://whatsapp.com" target="_blank" class="social-icon">
+                        <img src="img/whatsapp (2).png" alt="whatsapp"> <!-- Substitua pela URL do ícone do LinkedIn -->
                     </a>
                 </div>
             </div>

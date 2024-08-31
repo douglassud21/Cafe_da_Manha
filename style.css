@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* Evita rolagem horizontal */
@@ -66,10 +70,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6600;
-    text-shadow: 0 0 10px rgba(255, 102, 0, 0.6); /* Sombra no texto */
+    color: #6B8E23;
+    text-shadow: 0 0 10px rgba(60, 255, 0, 0.6); /* Sombra no texto */
 }
 
+/* Estilo original */
 .highlight-message {
     position: absolute;
     top: 50%;
@@ -93,7 +98,7 @@ nav ul li a:hover {
 button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #ff6600;
+    background-color: #6B8E23;
     color: white;
     border: none;
     cursor: pointer;
@@ -102,10 +107,12 @@ button {
 }
 
 button:hover {
-    background-color: #ff8533;
+    color: #000000;
+    background-color: #9ace32;
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
+/* Estilo original */
 .icons-section {
     display: flex;
     justify-content: center;
@@ -130,14 +137,6 @@ button:hover {
     filter: brightness(1.2); /* Aumenta o brilho ao passar o mouse */
 }
 
-
-
-
-
-
-
-
-
 .cards-container {
     position: relative;
     height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
@@ -160,7 +159,7 @@ button:hover {
 }
 
 .card {
-    width: 22%; /* Largura dos cards */
+    width: 22%; /* Largura dos cards para dispositivos maiores */
     margin: 1%; /* Margem entre os cards */
     padding: 20px; /* Espaçamento interno do card */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil ao redor do card */
@@ -188,21 +187,16 @@ button:hover {
     color: #333333; /* Cor do texto do título */
 }
 
-.card p {
-    margin: 5px 0; /* Margem superior e inferior do texto */
-    color: #666666; /* Cor do texto do card */
-}
-
 .card .price {
     font-size: 20px; /* Tamanho da fonte do preço */
-    color: #ff6600; /* Cor do preço */
+    color: #6B8E23; /* Cor do preço */
     margin-bottom: 10px; /* Espaço abaixo do preço */
 }
 
 .card .buy-button {
     padding: 10px 20px; /* Espaçamento interno do botão */
     font-size: 16px; /* Tamanho da fonte do botão */
-    background-color: #ff6600; /* Cor de fundo do botão */
+    background-color: #6B8E23; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Remove a borda padrão */
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
@@ -213,7 +207,8 @@ button:hover {
 }
 
 .card .buy-button:hover {
-    background-color: #ff8533; /* Cor do botão ao passar o mouse */
+    color: #000000;
+    background-color: #9dd332; /* Cor do botão ao passar o mouse */
 }
 
 .icon img {
@@ -226,13 +221,6 @@ button:hover {
 .icon img:hover {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
-
-
-
-
-
-
-
 
 .about {
     padding: 40px 20px;
@@ -260,13 +248,6 @@ button:hover {
     color: #666;
     margin-bottom: 15px;
 }
-
-
-
-
-
-
-
 
 .our-history {
     padding: 40px 20px;
@@ -317,16 +298,6 @@ button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
 }
 
-
-
-
-
-
-
-
-
-
-
 .comments {
     padding: 40px 20px;
     background-color: #f4f4f4; /* Cor de fundo clara para contraste */
@@ -355,6 +326,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 15px; /* Espaçamento entre a imagem e o texto */
+    box-sizing: border-box; /* Inclui padding e border na largura do card */
 }
 
 .comment-card img {
@@ -379,16 +351,6 @@ button:hover {
     color: #999;
     text-align: right;
 }
-
-
-
-
-
-
-
-
-
-
 
 footer {
     background-color: #121212; /* Cor de fundo escura para contraste */
@@ -437,7 +399,7 @@ footer {
     display: block;
     width: 60px;
     height: 4px;
-    background: #ff6600;
+    background: #6B8E23;
     margin: 10px auto;
     border-radius: 2px;
 }
@@ -456,7 +418,6 @@ footer {
 .social-icon img {
     width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
     height: auto;
-    border-radius: 50%; /* Adiciona bordas arredondadas aos ícones */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra sutil aos ícones */
 }
 
@@ -481,10 +442,406 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #ff6600; /* Muda a cor ao passar o mouse */
+    color: #6B8E23; /* Muda a cor ao passar o mouse */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto ao passar o mouse */
 }
 
 .footer-links {
     margin-top: 20px;
+}
+
+        /* Início da Media Query para Mobile */
+        @media (max-width: 768px) {
+            /* Estilização do header para versão mobile */
+            header {
+                height: 70vh;
+            }
+
+            /* Estilização do nav para versão mobile */
+            nav {
+                background-color: transparent;
+                padding: 10px;
+                text-align: left;
+                position: relative;
+                z-index: 10;
+            }
+
+            /* Estilização do menu hambúrguer */
+            .hamburger {
+                display: inline-block;
+                cursor: pointer;
+                z-index: 11;
+                position: relative;
+            }
+
+            .hamburger span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px;
+                background-color: white;
+                transition: background-color 0.3s ease;
+            }
+
+            /* Estilização do menu que aparece ao clicar no hambúrguer */
+            .mobile-menu {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.95); /* Fundo sólido com opacidade ajustada */
+                text-align: center;
+                z-index: 100; /* Colocar acima de outros elementos */
+                padding-top: 60px;
+            }
+
+            .mobile-menu li {
+                margin: 20px 0;
+                display: block;
+            }
+
+            .mobile-menu li a {
+                color: white;
+                font-size: 24px;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                display: block;
+                padding: 15px 0;
+            }
+
+            .mobile-menu li a:hover {
+                color: #6B8E23;
+                text-shadow: 0 0 10px rgba(60, 255, 0, 0.6);
+            }
+
+            /* Estilização para o menu ativo (quando o hambúrguer é clicado) */
+            nav.active .mobile-menu {
+                display: block;
+            }
+
+            nav.active .hamburger span {
+                background-color: #6B8E23;
+            }
+
+            /* Ocultar o menu padrão em telas menores */
+            nav ul {
+                display: none;
+            }
+
+            /* Ajustes adicionais para versão mobile */
+            .highlight-message {
+                text-align: center;
+            }
+        }
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 768px) {
+            .highlight-message {
+                top: 40%;
+                left: 5%;
+                transform: translateY(-40%);
+                text-align: center;
+                width: 90%; /* Ajusta a largura para caber melhor em telas menores */
+            }
+
+            .highlight-message h1 {
+                font-size: 32px; /* Reduz o tamanho do título */
+            }
+
+            .highlight-message p {
+                font-size: 18px; /* Reduz o tamanho do parágrafo */
+            }
+
+            button {
+                padding: 8px 16px; /* Ajusta o padding do botão */
+                font-size: 16px; /* Reduz o tamanho do texto do botão */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .highlight-message {
+                top: 30%;
+                left: 5%;
+                transform: translateY(-30%);
+            }
+
+            .highlight-message h1 {
+                font-size: 24px; /* Tamanho menor para telas muito pequenas */
+            }
+
+            .highlight-message p {
+                font-size: 16px; /* Tamanho do texto ajustado */
+            }
+
+            button {
+                padding: 6px 12px;
+                font-size: 14px; /* Tamanho do texto do botão ainda menor */
+            }
+        }
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 768px) {
+            .icons-section {
+                padding: 60px 0; /* Ajusta o padding para telas menores */
+            }
+
+            .icons-section .icon {
+                margin: 0 20px; /* Reduz o espaçamento entre ícones */
+            }
+
+            .icons-section .icon img {
+                width: 60px; /* Reduz o tamanho dos ícones */
+                height: 60px; /* Reduz o tamanho dos ícones */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .icons-section {
+                padding: 40px 0; /* Ajusta ainda mais o padding para telas muito pequenas */
+            }
+
+            .icons-section .icon {
+                margin: 0 10px; /* Reduz ainda mais o espaçamento entre ícones */
+            }
+
+            .icons-section .icon img {
+                width: 50px; /* Reduz o tamanho dos ícones */
+                height: 50px; /* Reduz o tamanho dos ícones */
+            }
+        }
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 768px) {
+            .card {
+                width: 45%; /* Ajusta a largura dos cards para duas colunas */
+                margin: 10px; /* Ajusta a margem entre os cards */
+            }
+
+            .card img {
+                height: 250px; /* Aumenta a altura da imagem para telas menores */
+            }
+
+            .card h2 {
+                font-size: 16px; /* Reduz o tamanho da fonte do título */
+            }
+
+            .card .price {
+                font-size: 18px; /* Reduz o tamanho da fonte do preço */
+            }
+
+            .card .buy-button {
+                padding: 8px 16px; /* Ajusta o padding do botão */
+                font-size: 14px; /* Reduz o tamanho da fonte do botão */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 90%; /* Ajusta a largura dos cards para ocupar quase toda a largura da tela */
+            }
+
+            .card img {
+                height: 340px; /* Aumenta a altura da imagem para telas muito pequenas */
+            }
+
+            .card h2 {
+                font-size: 14px; /* Reduz o tamanho da fonte do título */
+            }
+
+            .card .price {
+                font-size: 16px; /* Reduz o tamanho da fonte do preço */
+            }
+
+            .card .buy-button {
+                padding: 6px 12px; /* Ajusta o padding do botão */
+                font-size: 12px; /* Reduz o tamanho da fonte do botão */
+            }
+        }
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 768px) {
+            .about {
+                padding: 30px 15px; /* Ajusta o padding para telas menores */
+                min-height: 25vh; /* Reduz a altura mínima para telas menores */
+            }
+
+            .about h2 {
+                font-size: 24px; /* Reduz o tamanho da fonte do título */
+                margin-bottom: 15px; /* Ajusta o espaço abaixo do título */
+            }
+
+            .about p {
+                font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
+                margin-bottom: 12px; /* Ajusta o espaço abaixo do parágrafo */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about {
+                padding: 20px 10px; /* Ajusta o padding para telas muito pequenas */
+                min-height: 20vh; /* Reduz ainda mais a altura mínima */
+            }
+
+            .about h2 {
+                font-size: 20px; /* Reduz o tamanho da fonte do título */
+                margin-bottom: 10px; /* Ajusta o espaço abaixo do título */
+            }
+
+            .about p {
+                font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+                margin-bottom: 10px; /* Ajusta o espaço abaixo do parágrafo */
+            }
+        }
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 768px) {
+            .history-content {
+                flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+                gap: 20px; /* Mantém o espaçamento entre o texto e a imagem */
+            }
+
+            .history-image {
+                max-width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+            }
+
+            .history-text {
+                padding-right: 0; /* Remove o padding para adaptar o layout vertical */
+                text-align: center; /* Centraliza o texto em telas menores */
+            }
+
+            .history-image img {
+                width: 100%; /* Ajusta a imagem para ocupar toda a largura do contêiner */
+                margin-left: 0; /* Remove o margin-left para telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .history-text h2 {
+                font-size: 24px; /* Reduz o tamanho da fonte do título */
+                margin-bottom: 10px; /* Ajusta o espaço abaixo do título */
+            }
+
+            .history-text p {
+                font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
+                margin-bottom: 8px; /* Ajusta o espaço abaixo do parágrafo */
+            }
+
+            .history-image {
+                max-width: 100%; /* Ajusta a imagem para ocupar toda a largura do contêiner */
+            }
+
+            .history-image img {
+                border-radius: 8px; /* Ajusta as bordas arredondadas para telas menores */
+            }
+        }
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 768px) {
+            .comment-card {
+                flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+                align-items: flex-start; /* Alinha os itens ao início do card */
+                max-width: 100%; /* Ajusta a largura dos cards para ocupar toda a largura disponível */
+            }
+
+            .comment-card img {
+                width: 50px; /* Reduz o tamanho da imagem em telas menores */
+                height: 50px;
+            }
+
+            .comment-text {
+                text-align: left; /* Alinha o texto à esquerda */
+            }
+
+            .comment-text p {
+                font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
+            }
+
+            .comment-text .author {
+                font-size: 12px; /* Reduz o tamanho da fonte do autor */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .comments h2 {
+                font-size: 24px; /* Reduz o tamanho da fonte do título */
+                margin-bottom: 15px; /* Ajusta o espaço abaixo do título */
+            }
+
+            .comment-card {
+                padding: 15px; /* Reduz o padding dos cards */
+            }
+
+            .comment-card img {
+                width: 40px; /* Reduz ainda mais o tamanho da imagem */
+                height: 40px;
+            }
+
+            .comment-text p {
+                font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+            }
+
+            .comment-text .author {
+                font-size: 10px; /* Reduz o tamanho da fonte do autor */
+            }
+        }
+
+        /* Estilos responsivos para telas menores */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column; /* Alinha os itens em uma coluna para melhor visualização em telas menores */
+                align-items: center; /* Centraliza o conteúdo */
+            }
+
+            .footer-container > div {
+                margin: 20px 0; /* Ajusta a margem para melhor espaçamento */
+                text-align: center; /* Garante que o texto esteja centralizado */
+            }
+
+            .footer-info p {
+                font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+            }
+
+            .footer-links a {
+                font-size: 14px; /* Reduz o tamanho da fonte dos links */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-container {
+                padding: 20px; /* Reduz o padding para telas muito pequenas */
+            }
+
+            .footer-social h3,
+            .footer-info h3,
+            .footer-links h3 {
+                font-size: 18px; /* Reduz o tamanho da fonte dos cabeçalhos */
+            }
+
+            .footer-info p {
+                font-size: 10px; /* Reduz ainda mais o tamanho da fonte do parágrafo */
+            }
+
+            .footer-links a {
+                font-size: 12px; /* Reduz ainda mais o tamanho da fonte dos links */
+            }
+        }
+
+/* Barra de rolagem personalizada para Webkit */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #dcf0b6; /* Cor do trilho da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9dd332; /* Cor do polegar da barra de rolagem */
+    border-radius: 2px; /* Cantos arredondados do polegar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7cb113; /* Cor do polegar ao passar o mouse */
 }
