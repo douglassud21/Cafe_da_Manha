@@ -1,11 +1,379 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Café da Manhã</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="highlight-message">
+            <h1>Bem-vindo ao Café da Manhã!</h1>
+            <p>Desfrute do melhor café da manhã da cidade.</p>
+            <button>Faça seu pedido</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="icons-section">
+            <div class="icon" data-target="group1">
+                <img src="img/copo-redondo-de-cafe-quente-em-um-prato-de-vista-lateral.png" alt="Ícone 1"> <!-- Substitua pela URL do ícone -->
+            </div>
+            <div class="icon" data-target="group2">
+                <img src="img/pastoso (1).png" alt="Ícone 2"> <!-- Substitua pela URL do ícone -->
+            </div>
+            <div class="icon" data-target="group3">
+                <img src="img/suco (1).png" alt="Ícone 3"> <!-- Substitua pela URL do ícone -->
+            </div>
+            <div class="icon" data-target="group4">
+                <img src="img/torta (1).png" alt="Ícone 4"> <!-- Substitua pela URL do ícone -->
+            </div>
+        </section>
+
+        <section class="cards-container">
+            <!-- Grupo 1 -->
+            <div class="card-group" id="group1">
+                <div class="card">
+                    <img src="img/cafe chocolate e canela.jpg" alt="Café Chocolate e Canela">
+                    <h2>Café Chocolate e Canela</h2>
+                    <p>Uma mistura rica de café com notas de chocolate e um toque suave de canela.</p>
+                    <p class="price">R$ 10,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/cafe com caramelo.jpg" alt="Café com Caramelo">
+                    <h2>Café com Caramelo</h2>
+                    <p>Café aromático com um sabor doce e cremoso de caramelo.</p>
+                    <p class="price">R$ 12,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/cafe cremoso.jpg" alt="Café Cremoso">
+                    <h2>Café Cremoso</h2>
+                    <p>Café com uma textura cremosa e um sabor rico e suave.</p>
+                    <p class="price">R$ 11,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/cafe e frutas vermelhas.jpg" alt="Café com Frutas Vermelhas">
+                    <h2>Café com Frutas Vermelhas</h2>
+                    <p>Uma combinação única de café com um toque de frutas vermelhas frescas.</p>
+                    <p class="price">R$ 13,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/cafe intenso.jpg" alt="Café Intenso">
+                    <h2>Café Intenso</h2>
+                    <p>Café forte e encorpado para quem aprecia um sabor mais intenso.</p>
+                    <p class="price">R$ 14,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/cafe leite e canela.jpg" alt="Café Leite e Canela">
+                    <h2>Café Leite e Canela</h2>
+                    <p>Café suave com a adição de leite cremoso e um toque de canela.</p>
+                    <p class="price">R$ 15,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/cafe.jpg" alt="Café Clássico">
+                    <h2>Café Clássico</h2>
+                    <p>Café tradicional com um sabor equilibrado e aromático.</p>
+                    <p class="price">R$ 16,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/cafe com leite.jpg" alt="Café com Leite">
+                    <h2>Café com Leite</h2>
+                    <p>Café suave misturado com leite cremoso para um sabor mais leve.</p>
+                    <p class="price">R$ 17,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Grupo 2 -->
+            <div class="card-group" id="group2">
+                <div class="card">
+                    <img src="img/waffer.jpg" alt="Café Latte 1"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 1</h2>
+                    <p>Delicioso café latte acompanhado de wafer crocante.</p>
+                    <p class="price">R$ 12,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/bolinhos.jpg" alt="Café Latte 2"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 2</h2>
+                    <p>Saboreie um café latte com nossos bolinhos fresquinhos.</p>
+                    <p class="price">R$ 13,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/bolo de laranja.jpg" alt="Café Latte 3"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 3</h2>
+                    <p>Café latte harmonizado com um bolo de laranja cítrico.</p>
+                    <p class="price">R$ 14,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/churros.jpg" alt="Café Latte 4"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 4</h2>
+                    <p>Combine seu café latte com churros quentinhos e polvilhados com açúcar.</p>
+                    <p class="price">R$ 15,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/crepes.jpg" alt="Café Latte 5"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 5</h2>
+                    <p>Uma combinação perfeita de café latte com crepes recheados.</p>
+                    <p class="price">R$ 16,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/croassant.jpg" alt="Café Latte 6"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 6</h2>
+                    <p>Delicie-se com um café latte servido com croissant amanteigado.</p>
+                    <p class="price">R$ 17,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/foleados.jpg" alt="Café Latte 7"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 7</h2>
+                    <p>Café latte acompanhado de folhados saborosos.</p>
+                    <p class="price">R$ 18,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/panquecas.jpg" alt="Café Latte 8"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Latte 8</h2>
+                    <p>Uma mistura irresistível de café latte com panquecas fofinhas.</p>
+                    <p class="price">R$ 19,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Grupo 3 -->
+            <div class="card-group" id="group3">
+                <div class="card">
+                    <img src="img/suco abacaxi.jpg" alt="Suco de Abacaxi"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Abacaxi</h2>
+                    <p>Refrescante suco de abacaxi com um toque de menta.</p>
+                    <p class="price">R$ 14,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/suco uva.jpg" alt="Suco de Uva"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Uva</h2>
+                    <p>Suco de uva puro e delicioso, perfeito para qualquer momento do dia.</p>
+                    <p class="price">R$ 15,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/suco maracuja.jpg" alt="Suco de Maracujá"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Maracujá</h2>
+                    <p>Suco de maracujá refrescante e levemente ácido, ideal para um dia quente.</p>
+                    <p class="price">R$ 16,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/suco manga.jpg" alt="Suco de Manga"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Manga</h2>
+                    <p>Doce suco de manga com um sabor tropical irresistível.</p>
+                    <p class="price">R$ 17,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/suco limão.jpg" alt="Suco de Limão"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Limão</h2>
+                    <p>Suco de limão refrescante com um toque de doçura.</p>
+                    <p class="price">R$ 18,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/suco laranja.jpg" alt="Suco de Laranja"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Laranja</h2>
+                    <p>Suco de laranja natural e cheio de vitamina C.</p>
+                    <p class="price">R$ 19,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/suco goiaba.jpg" alt="Suco de Goiaba"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Goiaba</h2>
+                    <p>Suco de goiaba fresco com um sabor exótico e doce.</p>
+                    <p class="price">R$ 20,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/suco acerola.jpg" alt="Suco de Acerola"> <!-- Substitua pela URL da imagem -->
+                    <h2>Suco de Acerola</h2>
+                    <p>Suco de acerola rico em vitamina C e com um sabor vibrante.</p>
+                    <p class="price">R$ 21,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Grupo 4 -->
+            <div class="card-group" id="group4">
+                <div class="card">
+                    <img src="americano1.jpg" alt="Café Americano 1"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 1</h2>
+                    <p>Descrição do Café Americano 1.</p>
+                    <p class="price">R$ 8,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="americano2.jpg" alt="Café Americano 2"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 2</h2>
+                    <p>Descrição do Café Americano 2.</p>
+                    <p class="price">R$ 9,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="americano3.jpg" alt="Café Americano 3"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 3</h2>
+                    <p>Descrição do Café Americano 3.</p>
+                    <p class="price">R$ 10,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="americano4.jpg" alt="Café Americano 4"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 4</h2>
+                    <p>Descrição do Café Americano 4.</p>
+                    <p class="price">R$ 11,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="americano5.jpg" alt="Café Americano 5"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 5</h2>
+                    <p>Descrição do Café Americano 5.</p>
+                    <p class="price">R$ 12,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="americano6.jpg" alt="Café Americano 6"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 6</h2>
+                    <p>Descrição do Café Americano 6.</p>
+                    <p class="price">R$ 13,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="americano7.jpg" alt="Café Americano 7"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 7</h2>
+                    <p>Descrição do Café Americano 7.</p>
+                    <p class="price">R$ 14,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="americano8.jpg" alt="Café Americano 8"> <!-- Substitua pela URL da imagem -->
+                    <h2>Café Americano 8</h2>
+                    <p>Descrição do Café Americano 8.</p>
+                    <p class="price">R$ 15,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-content">
+                <h2>Sobre Nós</h2>
+                <p>Bem-vindo ao Café da Manhã! Somos apaixonados por café e oferecemos uma variedade de opções para começar o seu dia com sabor. Nossa missão é proporcionar uma experiência incrível com cafés de alta qualidade e um atendimento excepcional.</p>
+                <p>Venha nos visitar e descubra o café perfeito para você!</p>
+            </div>
+        </section>
+
+        <section class="our-history">
+            <div class="history-content">
+                <div class="history-text">
+                    <h2>Nossa História</h2>
+                    <p>Fundado em [Ano de Fundação], o Café da Manhã nasceu da paixão por cafés de qualidade e pelo desejo de criar um espaço acolhedor para todos. Desde o início, nossa missão foi proporcionar uma experiência única, combinando o melhor do café com um ambiente amigável e convidativo.</p>
+                    <p>Nosso fundador, [Nome do Fundador], começou este projeto com a visão de criar um local onde as pessoas pudessem não apenas saborear um ótimo café, mas também se conectar e relaxar. Com o passar dos anos, expandimos nossas ofertas para incluir uma variedade de bebidas, acompanhamentos e delícias frescas, sempre mantendo nosso compromisso com a qualidade e o atendimento excepcional.</p>
+                    <p>Estamos orgulhosos de ser um ponto de encontro para amantes de café e continuamos a inovar e evoluir para atender às necessidades e desejos de nossos clientes. Nosso café é mais do que um lugar para beber café; é um lugar onde histórias são compartilhadas e memórias são feitas.</p>
+                    <p>Venha nos visitar e faça parte da nossa história. Estamos ansiosos para recebê-lo em nossas lojas e oferecer uma experiência memorável!</p>
+                </div>
+                <div class="history-image">
+                    <img src="img/loja.jpg" alt="Nossa História"> <!-- Substitua pela URL da imagem -->
+                </div>
+            </div>
+        </section>
+
+        <section class="comments">
+            <h2>Comentários dos Clientes</h2>
+            <div class="comments-container">
+                <div class="comment-card">
+                    <img src="img/pessoa1.jpg" alt="Cliente 1"> <!-- Substitua pela URL da imagem do cliente -->
+                    <div class="comment-text">
+                        <p>"O café do Café da Manhã é maravilhoso! O melhor da cidade, sem dúvida."</p>
+                        <p class="author">- João Silva</p>
+                    </div>
+                </div>
+                <div class="comment-card">
+                    <img src="img/pessoa2.jpg" alt="Cliente 2"> <!-- Substitua pela URL da imagem do cliente -->
+                    <div class="comment-text">
+                        <p>"Adorei a atmosfera acolhedora e o atendimento impecável. Recomendo!"</p>
+                        <p class="author">- Maria Oliveira</p>
+                    </div>
+                </div>
+                <div class="comment-card">
+                    <img src="img/pessoa3.jpg" alt="Cliente 3"> <!-- Substitua pela URL da imagem do cliente -->
+                    <div class="comment-text">
+                        <p>"Uma experiência incrível! Os cafés são deliciosos e o ambiente é ótimo."</p>
+                        <p class="author">- Pedro Santos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <img src="facebook-icon.png" alt="Facebook"> <!-- Substitua pela URL do ícone do Facebook -->
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <img src="twitter-icon.png" alt="Twitter"> <!-- Substitua pela URL do ícone do Twitter -->
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <img src="instagram-icon.png" alt="Instagram"> <!-- Substitua pela URL do ícone do Instagram -->
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon">
+                        <img src="linkedin-icon.png" alt="LinkedIn"> <!-- Substitua pela URL do ícone do LinkedIn -->
+                    </a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h3>Informações</h3>
+                <p>&copy; 2024 Café da Manhã. Todos os direitos reservados.</p>
+                <p>Endereço: Rua Exemplo, 123, Cidade, Estado, CEP 00000-000</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <p>Email: contato@cafedamanha.com.br</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <a href="#sobre-nos">Sobre Nós</a>
+                <a href="#nossa-historia">Nossa História</a>
+                <a href="#comentarios">Comentários</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
